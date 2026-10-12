@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexo — ta maison et tes autos, reliées</title>
+<meta name="description" content="Nexo réunit ta borne de recharge, tes autos électriques et ta maison connectée dans une seule app pour iPhone et iPad.">
+<meta name="theme-color" content="#0B1F2A">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./" aria-label="Nexo, accueil">
+    <svg class="mark" viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg>
+    <span>Nexo</span>
+  </a>
+  <nav aria-label="Navigation principale">
+    <a href="#relie">Ce que Nexo relie</a>
+    <a href="#securite">Sécurité</a>
+    <a href="confidentialite.html">Confidentialité</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Héros : le logo se « recharge » une fois à l'ouverture -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ta maison et tes autos, reliées.</h1>
+      <p class="lede">Nexo réunit ta borne de recharge, tes autos électriques et ta maison connectée dans une seule app pour iPhone et iPad.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#relie">Voir ce que Nexo fait</a>
+        <a class="button ghost" href="confidentialite.html">Lire la politique de confidentialité</a>
+      </div>
+      <p class="note">En test privé avec TestFlight.</p>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="charge-mark" viewBox="240 150 544 740">
+        <defs>
+          <linearGradient id="fill" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFC75A"/>
+            <stop offset="1" stop-color="#F5A623"/>
+          </linearGradient>
+          <clipPath id="bolt-clip">
+            <polygon points="300,292 402,292 562,480 510,480 724,732 622,732 466,548 518,548"/>
+          </clipPath>
+        </defs>
+        <rect x="300" y="292" width="102" height="440" rx="26" class="bar"/>
+        <rect x="622" y="292" width="102" height="440" rx="26" class="bar"/>
+        <polygon class="bolt-empty" points="300,292 402,292 562,480 510,480 724,732 622,732 466,548 518,548"/>
+        <g clip-path="url(#bolt-clip)">
+          <rect class="bolt-fill" x="300" y="292" width="424" height="440" fill="url(#fill)"/>
+        </g>
+        <circle class="dot dot-a" cx="351" cy="812" r="30"/>
+        <circle class="dot dot-b" cx="673" cy="212" r="30"/>
+      </svg>
+      <div class="readout">
+        <span class="readout-value"><span id="kwh">0,0</span> kWh</span>
+        <span class="readout-label">ajoutés ce soir</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ce que Nexo relie : un schéma, pas une grille de cartes -->
+  <section class="links" id="relie">
+    <div class="section-head">
+      <h2>Ce que Nexo relie</h2>
+      <p>Tout ce qui fait marcher ta maison électrique, dans un seul tableau de bord.</p>
+    </div>
+
+    <div class="network">
+      <div class="hub" aria-hidden="true">
+        <svg viewBox="0 0 424 660"><use href="#nexo-mark"/></svg>
+      </div>
+      <ul class="nodes">
+        <li class="node n1">
+          <h3>Ta borne de recharge</h3>
+          <p>kWh et puissance en direct, ampérage réglable, arrêt de la recharge, et une notification quand l'auto se branche ou est pleine.</p>
+        </li>
+        <li class="node n2">
+          <h3>Tes autos</h3>
+          <p>Batterie, autonomie et recharge de chaque auto. Démarrage à distance avec température, sièges et volant chauffants pour les modèles compatibles.</p>
+        </li>
+        <li class="node n3">
+          <h3>Ta consommation</h3>
+          <p>Diagrammes sur 30 jours et 12 mois, coûts, heures de branchement et historique complet.</p>
+        </li>
+        <li class="node n4">
+          <h3>Tes récompenses</h3>
+          <p>Ton solde, tes gains, tes retraits et tes parrainages de recharge, même sur plusieurs comptes.</p>
+        </li>
+        <li class="node n5">
+          <h3>Ta maison connectée</h3>
+          <p>Serrure, capteurs de température, d'ouverture et de fuite d'eau, prises et lumières, et la vidéo de ta caméra.</p>
+        </li>
+        <li class="node n6">
+          <h3>La carte</h3>
+          <p>Où sont tes autos connectées, avec l'itinéraire en un toucher.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Un moment de la vie réelle -->
+  <section class="story">
+    <div class="story-text">
+      <h2>Le soir, un coup d'œil suffit.</h2>
+      <p>Tu branches l'auto en arrivant. Nexo sait laquelle est sur la borne, te prévient quand la recharge commence et te dit à quelle heure elle sera pleine. Le matin, tu démarres le chauffage de l'auto avant de sortir, et tu vérifies que la porte est bien verrouillée.</p>
+    </div>
+    <ol class="timeline">
+      <li><time>18 h 04</time><span>Auto branchée, recharge commencée</span></li>
+      <li><time>23 h 40</time><span>Recharge terminée : 32,6 kWh ajoutés</span></li>
+      <li><time>7 h 15</time><span>Chauffage lancé à 21 °C, sièges chauffants</span></li>
+      <li><time>7 h 30</time><span>Porte d'entrée verrouillée</span></li>
+    </ol>
+  </section>
+
+  <!-- Sécurité -->
+  <section class="security" id="securite">
+    <div class="section-head">
+      <h2>Tes comptes restent chez toi</h2>
+    </div>
+    <dl class="facts">
+      <div>
+        <dt>Sur ton appareil seulement</dt>
+        <dd>Tes identifiants sont chiffrés dans le trousseau de ton iPhone ou de ton iPad. Nexo n'a pas de serveur et ne les reçoit jamais.</dd>
+      </div>
+      <div>
+        <dt>Face ID</dt>
+        <dd>Verrouille l'app, et confirme avec ton visage avant de déverrouiller une porte ou de démarrer une auto.</dd>
+      </div>
+      <div>
+        <dt>Aucune publicité, aucun suivi</dt>
+        <dd>Nexo ne collecte aucune donnée sur toi ni sur ton utilisation.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- À ton image -->
+  <section class="yours">
+    <div class="section-head">
+      <h2>À ton image</h2>
+      <p>Six couleurs de thème, le mode clair ou sombre, six animations d'ouverture et six icônes au choix.</p>
+    </div>
+    <div class="swatches" role="list" aria-label="Icônes au choix">
+      <div class="swatch" role="listitem" style="--a:#0F5C5C;--b:#0B1F2A;--bolt:#F5A623;--bars:#fff;--dots:#5FE0C8"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Classique</span></div>
+      <div class="swatch" role="listitem" style="--a:#14213D;--b:#05080F;--bolt:#5AA9FF;--bars:#E8EEF7;--dots:#5AA9FF"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Nuit</span></div>
+      <div class="swatch" role="listitem" style="--a:#5B3C9E;--b:#0B6E6E;--bolt:#FF7A9C;--bars:#fff;--dots:#FFD166"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Aurore</span></div>
+      <div class="swatch" role="listitem" style="--a:#E8871E;--b:#F7B733;--bolt:#1B3A2F;--bars:#fff;--dots:#1B3A2F"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Ambre</span></div>
+      <div class="swatch" role="listitem" style="--a:#2A2A2E;--b:#000;--bolt:#34C759;--bars:#F2F2F4;--dots:#34C759"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Graphite</span></div>
+      <div class="swatch" role="listitem" style="--a:#C0392B;--b:#7A1712;--bolt:#F5B841;--bars:#FFF4E6;--dots:#F5B841"><svg viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg><span>Érable</span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="bottom">
+  <div class="brand small">
+    <svg class="mark" viewBox="0 0 424 660" aria-hidden="true"><use href="#nexo-mark"/></svg>
+    <span>Nexo</span>
+  </div>
+  <p>Fait au Québec. Nexo n'est pas affiliée aux fabricants des appareils et des véhicules compatibles.</p>
+  <nav aria-label="Liens de bas de page">
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="https://github.com/asmqc/Nexo">Assistance</a>
+  </nav>
+</footer>
+
+<!-- Le logo Nexo, dessiné une seule fois -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="nexo-mark" viewBox="300 182 424 660">
+    <rect x="300" y="292" width="102" height="440" rx="26" fill="var(--bars, #fff)"/>
+    <rect x="622" y="292" width="102" height="440" rx="26" fill="var(--bars, #fff)"/>
+    <polygon points="300,292 402,292 562,480 510,480 724,732 622,732 466,548 518,548" fill="var(--bolt, #F5A623)"/>
+    <circle cx="351" cy="812" r="30" fill="var(--dots, #5FE0C8)"/>
+    <circle cx="673" cy="212" r="30" fill="var(--dots, #5FE0C8)"/>
+  </symbol>
+</svg>
+
+<script>
+  // Compteur du héros : monte une seule fois avec la « recharge » du logo
+  (function () {
+    const out = document.getElementById('kwh');
+    const target = 32.6;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fmt = v => v.toFixed(1).replace('.', ',');
+    if (reduce) { out.textContent = fmt(target); return; }
+    const start = performance.now() + 500, duration = 2200;
+    function tick(now) {
+      const t = Math.min(Math.max((now - start) / duration, 0), 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      out.textContent = fmt(target * eased);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+</script>
+</body>
+</html>

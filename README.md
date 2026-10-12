@@ -17,7 +17,7 @@
 | Branche | Contenu |
 |---|---|
 | `main` | Cette présentation |
-| `Site-Web` | Le site web de Nexo |
+| `Site-Web` | Le site web de Nexo (`index.html`, `confidentialite.html`, `style.css`, `logo.svg`) |
 
 Le code de l'application est dans un dépôt privé.
 
